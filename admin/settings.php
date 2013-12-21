@@ -70,11 +70,12 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 		$this->addSettingFields(
 			array(
 				'strFieldID'		=> 'link',
+				'strSectionID'       => 'options',
 				'strTitle'			=> 'Live Preview Links',
 				'strDescription'	=> 'Which links will trigger the live preview.',
 				'strType'			=> 'select',
 				'vLabel'            => array( 
-					'site'        => __( 'Site links only', 'wp-live-preview-post' ),
+					'site'        => __( 'Site internal links only', 'wp-live-preview-post' ),
 					'all'         => __( 'All links', 'wp-live-preview-post' ),
 					'class'       => __( 'class="livepreview"', 'wp-live-preview-post' ),
 					'shortcode'   => __( '[livepreview] shortcode', 'wp-live-preview-post' )
