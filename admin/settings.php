@@ -1,69 +1,39 @@
 <?php
 
 
-// Include the library
 if ( ! class_exists( 'AdminPageFramework' ) )
-	include_once dirname( __FILE__ ) . '/wp-live-preview-post.php';
+	include_once dirname( __FILE__ ) . '/admin-page-framework.php';
 
-// extend the class
 class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 
-
-	/*
-    viewWidth: 300,
-    viewHeight: 200,
-    targetWidth: 1000,
-    targetHeight: 800,
-    scale: '0.5',
-    offset: 50,
-    position: 'left'
- */
-
-	// Define the setup method to set how many pages, page titles and icons etc.
 	public function setUp() {
-		// Root menu
 		$this->setRootMenuPage(
-			'Live Preview Post',   // specify the name of the page group
+			__('Live Preview Post','wp-live-preview-post' ),
 			//plugins_url( 'img/keyhole.png', __FILE__ )
 			"\f115"
 		);
 
-		// General Options
+		$this->showPageHeadingTabs( false );
+
 		$this->addSubMenuPage(
-			'General Options',        // page title
-			'wp_live_preview_post_options',   // page slug
+			__('Live Preview Post','wp-live-preview-post' ),
+			'wp_live_preview_post_options',
 			'options-general'
 		);
 
 		$this->addHelpTab(
 			array(
-				'strPageSlug'         => 'wp_live_preview_post_options',    // ( mandatory )
-				// 'strPageTabSlug'   => null,    // ( optional )
-				'strHelpTabTitle'     => 'Introduction',
-				'strHelpTabID'        => 'general_options_help_introduction',  // ( mandatory )
+				'strPageSlug'         => 'wp_live_preview_post_options',
+				'strHelpTabTitle'     => __('Live Preview Post','wp-live-preview-post' ),
+				'strHelpTabID'        => 'general_options_help_introduction',
 				'strHelpTabContent'   => __( 'This contextual help text can be set with the addHelpTab() method.', 'wp-live-preview-post' ),
-				//'strHelpTabSidebarContent'  => __( 'This is placed in the sidebar of the help pane.', 'wp-live-preview-post' ),
-
 			)
 		);
-		// what
 
 		$this->addSettingSections(
 			array(
-				'strSectionID'       => 'options',    // the section ID
-				'strPageSlug'        => 'wp_live_preview_post_options'    // the page slug that the section belongs to
-				//'strTitle'           => __('','wp-live-preview-post')    // the section title
-			)
-		);
-
-		$this->addHelpTab(
-			array(
-				'strPageSlug'        => 'wp_live_preview_post_options',    // ( mandatory )
-				// 'strPageTabSlug'  => null,    // ( optional )
-				'strHelpTabTitle'    => 'What',
-				'strHelpTabID'       => 'general_options_help_what',  // ( mandatory )
-				'strHelpTabContent'  => __( 'what what what', 'wp-live-preview-post' ),
-				//'strHelpTabSidebarContent'  => __( 'This is placed in the sidebar of the help pane.', 'wp-live-preview-post' ),
+				'strSectionID'       => 'options',
+				'strPageSlug'        => 'wp_live_preview_post_options'
 			)
 		);
 
@@ -71,7 +41,7 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 			array(
 				'strFieldID'		=> 'link',
 				'strSectionID'       => 'options',
-				'strTitle'			=> 'Live Preview Links',
+				'strTitle'			=> __('Live Preview Links','wp-live-preview-post' ),
 				'strDescription'	=> 'Which links will trigger the live preview.',
 				'strType'			=> 'select',
 				'vLabel'            => array( 
@@ -80,19 +50,19 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 					'class'       => __( 'class="livepreview"', 'wp-live-preview-post' ),
 					'shortcode'   => __( '[livepreview] shortcode', 'wp-live-preview-post' )
 				),
-				'vDefault' 			=> 'site',	// 0 means the first item
+				'vDefault' 			=> 'site'
 			),
-			array( // Multiple Sizes
+			array(
 				'strFieldID'         => 'dialog',
 				'strSectionID'       => 'options',
-				'strTitle'           => __( 'Live Preview Dialog', 'wp-live-preview-post-demo' ),
+				'strTitle'           => __( 'Live Preview Dialog', 'wp-live-preview-post' ),
 				'strDescription'     => __( 'The preview dialog size.', 'wp-live-preview-post' ),
 				'strType'            => 'size',
 				'vLabel'             => array(
-					'viewwidth'    => __( 'View Width', 'wp-live-preview-post-demo' ),
-					'viewheight'   => __( 'View Height', 'wp-live-preview-post-demo' ),
+					'viewwidth'    => __( 'View Width', 'wp-live-preview-post' ),
+					'viewheight'   => __( 'View Height', 'wp-live-preview-post' ),
 				),
-				'vSizeUnits'         => array(  // notice that the array key structure corresponds to the vLabel array's.
+				'vSizeUnits'         => array(
 					'viewwidth'    => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 					'viewheight'   => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 				),
@@ -102,17 +72,17 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				),
 				'vDelimiter'       => '<br />',
 			),
-			array( // Multiple Sizes
+			array(
 				'strFieldID'         => 'target',
 				'strSectionID'       => 'options',
-				'strTitle'           => __( 'Site Viewport', 'wp-live-preview-post-demo' ),
+				'strTitle'           => __( 'Site Viewport', 'wp-live-preview-post' ),
 				'strDescription'     => __( 'The viewport size of the site you are previewing', 'wp-live-preview-post' ),
 				'strType'            => 'size',
 				'vLabel'             => array(
-					'targetwidth'  => __( 'Target Width', 'wp-live-preview-post-demo' ),
-					'targetheight' => __( 'Target Height', 'wp-live-preview-post-demo' ),
+					'targetwidth'  => __( 'Target Width', 'wp-live-preview-post' ),
+					'targetheight' => __( 'Target Height', 'wp-live-preview-post' ),
 				),
-				'vSizeUnits'         => array(  // notice that the array key structure corresponds to the vLabel array's.
+				'vSizeUnits'         => array(
 					'targetwidth'  => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 					'targetheight' => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 				),
@@ -130,7 +100,7 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'vMax'               => '1.0',
 				'vMin'               => '0.0',
 				'vStep'              => '0.1',
-				'strDescription'     => __( 'The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size.', 'wp-live-preview-post-demo' ),
+				'strDescription'     => __( 'The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size.', 'wp-live-preview-post' ),
 				'vDefault'           =>  0,
 				'vSize'              => 40
 			),
@@ -143,14 +113,14 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'vSizeUnits'         => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 				'vSize'              => 40
 			),
-			array(  // Single set of radio buttons
+			array(
 				'strFieldID'         => 'postition',
 				'strSectionID'       => 'options',
 				'strTitle'           => __( 'Postition', 'wp-live-preview-post' ),
 				'strDescription'     => __( 'Side to which the preview will open', 'wp-live-preview-post' ),
 				'strType'            => 'radio',
 				'vLabel'             => array( 'left' => 'Left', 'right' => 'Right'  ),
-				'vDefault'           => 'right'  // banana
+				'vDefault'           => 'right'
 			)
 		);
 
