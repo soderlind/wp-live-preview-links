@@ -10,8 +10,10 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 		$this->setRootMenuPage(
 			__('Live Preview Post','wp-live-preview-post' ),
 			//plugins_url( 'img/keyhole.png', __FILE__ )
-			"\f115"
+			"media"
 		);
+
+
 
 		$this->showPageHeadingTabs( false );
 
@@ -41,11 +43,12 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 			array(
 				'strFieldID'		=> 'link',
 				'strSectionID'       => 'options',
-				'strTitle'			=> __('Live Preview Links','wp-live-preview-post' ),
-				'strDescription'	=> 'Which links will trigger the live preview.',
+				'strTitle'			=> __( 'Live Preview Links','wp-live-preview-post' ),
+				'strDescription'	=> __( "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes.", 'wp-live-preview-post' ),
 				'strType'			=> 'select',
 				'vLabel'            => array( 
 					'site'        => __( 'Site internal links only', 'wp-live-preview-post' ),
+					'external'    => __( 'External links only', 'wp-live-preview-post' ),
 					'all'         => __( 'All links', 'wp-live-preview-post' ),
 					'class'       => __( 'class="livepreview"', 'wp-live-preview-post' ),
 					'shortcode'   => __( '[livepreview] shortcode', 'wp-live-preview-post' )
@@ -59,16 +62,16 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'strDescription'     => __( 'The preview dialog size.', 'wp-live-preview-post' ),
 				'strType'            => 'size',
 				'vLabel'             => array(
-					'viewwidth'    => __( 'View Width', 'wp-live-preview-post' ),
-					'viewheight'   => __( 'View Height', 'wp-live-preview-post' ),
+					'width'    => __( 'Width', 'wp-live-preview-post' ),
+					'height'   => __( 'Height', 'wp-live-preview-post' ),
 				),
 				'vSizeUnits'         => array(
-					'viewwidth'    => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
-					'viewheight'   => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
+					'width'    => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
+					'height'   => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 				),
 				'vDefault'           => array(
-					'viewwidth'    => array( 'size' => 300, 'unit' => 'px' ),
-					'viewheight'   => array( 'size' => 200, 'unit' => 'px' ),
+					'width'    => array( 'size' => 300, 'unit' => 'px' ),
+					'height'   => array( 'size' => 200, 'unit' => 'px' ),
 				),
 				'vDelimiter'       => '<br />',
 			),
@@ -79,16 +82,16 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'strDescription'     => __( 'The viewport size of the site you are previewing', 'wp-live-preview-post' ),
 				'strType'            => 'size',
 				'vLabel'             => array(
-					'targetwidth'  => __( 'Target Width', 'wp-live-preview-post' ),
-					'targetheight' => __( 'Target Height', 'wp-live-preview-post' ),
+					'width'  => __( 'Width', 'wp-live-preview-post' ),
+					'height' => __( 'Height', 'wp-live-preview-post' ),
 				),
 				'vSizeUnits'         => array(
-					'targetwidth'  => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
-					'targetheight' => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
+					'width'  => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
+					'height' => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
 				),
 				'vDefault'           => array(
-					'targetwidth'  => array( 'size' => 1000, 'unit' => 'px' ),
-					'targetheight' => array( 'size' => 800, 'unit' => 'px' ),
+					'width'  => array( 'size' => 1000, 'unit' => 'px' ),
+					'height' => array( 'size' => 800, 'unit' => 'px' ),
 				),
 				'vDelimiter'         => '<br />',
 			),
@@ -102,7 +105,7 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'vStep'              => '0.1',
 				'strDescription'     => __( 'The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size.', 'wp-live-preview-post' ),
 				'vDefault'           =>  0,
-				'vSize'              => 40
+				//'vSize'              => 40
 			),
 			array(
 				'strFieldID'         => 'offset',
@@ -111,7 +114,11 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 				'strDescription'     => __( 'The offset from the target in pixels', 'wp-live-preview-post' ),
 				'strType'            => 'size',
 				'vSizeUnits'         => array( 'px' => 'px', '%' => '%', 'em' => 'em' ),
-				'vSize'              => 40
+				'vMax'               => '500',
+				'vMin'               => '0',
+				'vStep'              => '1',
+				'vDefault'           =>  50,
+				//'vSize'              => 40
 			),
 			array(
 				'strFieldID'         => 'postition',
@@ -125,5 +132,11 @@ class WP_Live_Preview_Post_Settings extends AdminPageFramework {
 		);
 
 	}
+
+	public function do_WP_Live_Preview_Post_Settings() {
+        submit_button();
+        //update_option( 'WP_Live_Preview_Post_Settings', '' );
+        echo $this->oDebug->getArray( get_option( 'WP_Live_Preview_Post_Settings' ) );       
+    }
 
 }
