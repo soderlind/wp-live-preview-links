@@ -6,10 +6,11 @@
     height:200px;
     width:300px;
     background-color:#fff;
-    background-image:url('/images/icon_loading.gif');
+    background-image:url('../images/icon_loading.gif');
     background-repeat:no-repeat;
     background-position:center center;
     position:absolute;
+    z-index: 9999;
     border:solid 5px #999;
     border-radius:5px;
     -moz-border-radius: 5px;
