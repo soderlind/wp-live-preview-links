@@ -9,8 +9,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 	public function setUp() {
 		$this->setRootMenuPage(
 			__('Live Preview Links','wp-live-preview-links' ),
-			//plugins_url( 'img/keyhole.png', __FILE__ )
-			"media"
+			version_compare( $GLOBALS['wp_version'], '3.8', '>=' ) ? 'dashicons-welcome-view-site' : null
 		);
 
 		$this->showPageHeadingTabs( false );
@@ -45,13 +44,13 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 				'strDescription'	=> __( "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes.", 'wp-live-preview-links' ),
 				'strType'			=> 'select',
 				'vLabel'            => array( 
-					'site'        => __( 'Site internal links only', 'wp-live-preview-links' ),
+					'class'       => __( 'class="livepreview"', 'wp-live-preview-links' ),
+					'site'        => __( 'Internal links only', 'wp-live-preview-links' ),
 					'external'    => __( 'External links only', 'wp-live-preview-links' ),
 					'all'         => __( 'All links', 'wp-live-preview-links' ),
-					'class'       => __( 'class="livepreview"', 'wp-live-preview-links' ),
 					'shortcode'   => __( '[livepreview] shortcode', 'wp-live-preview-links' )
 				),
-				'vDefault' 			=> 'site'
+				'vDefault' 			=> 'class'
 			),
 			array(
 				'strFieldID'         => 'dialog',

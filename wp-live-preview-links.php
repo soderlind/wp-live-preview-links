@@ -29,10 +29,10 @@ add_action( 'wp_enqueue_scripts', 'wp_live_preview_links_styles' );
 
 function wp_live_preview_links_scripts()
 {
-	wp_enqueue_script( 'jquery-live-preview', plugins_url( '/lib/js/jquery-live-preview.js', __FILE__ ),array( 'jquery' ),'1.1' );
-	wp_enqueue_script( 'wp-live-preview-links-js', plugins_url( '/lib/js/jquery-wp-live-preview-links.js', __FILE__ ),array( 'jquery','jquery-live-preview' ),'1.1' );	
-	//wp_enqueue_script( 'jquery-live-preview' );
-	//wp_enqueue_script( 'wp-live-preview-links-js' );	
+	wp_register_script( 'jquery-live-preview', plugins_url( '/lib/js/jquery-live-preview.js', __FILE__ ),array( 'jquery'),'1.1' );
+	wp_register_script( 'wp-live-preview-links-js', plugins_url( '/lib/js/jquery-wp-live-preview-links.js', __FILE__ ),array( 'jquery','jquery-live-preview' ),'1.1' );	
+	wp_enqueue_script( 'jquery-live-preview' );
+	wp_enqueue_script( 'wp-live-preview-links-js' );	
 
 }
 add_action( 'wp_enqueue_scripts', 'wp_live_preview_links_scripts', 5 );
