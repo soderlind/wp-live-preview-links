@@ -1,5 +1,6 @@
 <?php
 
+defined( 'WPINC' ) or die;
 
 if ( ! class_exists( 'AdminPageFramework' ) )
 	include_once dirname( __FILE__ ) . '/admin-page-framework.php';
@@ -44,11 +45,10 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 				'strDescription'	=> __( "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes.", 'wp-live-preview-links' ),
 				'strType'			=> 'select',
 				'vLabel'            => array( 
-					'class'       => __( 'class="livepreview"', 'wp-live-preview-links' ),
+					'class'       => __( 'class="wp-live-preview"', 'wp-live-preview-links' ),
 					'site'        => __( 'Internal links only', 'wp-live-preview-links' ),
 					'external'    => __( 'External links only', 'wp-live-preview-links' ),
-					'all'         => __( 'All links', 'wp-live-preview-links' ),
-					'shortcode'   => __( '[livepreview] shortcode', 'wp-live-preview-links' )
+					'all'         => __( 'All links', 'wp-live-preview-links' )
 				),
 				'vDefault' 			=> 'class'
 			),
@@ -108,7 +108,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 				'vMax'               => '1.0',
 				'vMin'               => '0.0',
 				'vStep'              => '0.1',
-				'strDescription'     => __( 'The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size.', 'wp-live-preview-links' ),
+				'strDescription'     => __( 'The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (scale = 0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size.', 'wp-live-preview-links' ),
 				'vDefault'           =>  0,
 				//'vSize'              => 40
 			),
@@ -144,7 +144,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
         echo $this->oDebug->getArray( get_option( 'WP_Live_Preview_Links_Settings' ) );       
     }
 
-
+/*
     public function validation_WP_Live_Preview_Links_Settings( $arrNewInput, $arrOldOptions ) {	// validation_ + {extended class name} + _ + {field ID}
 		
 		// Set a flag.
@@ -182,5 +182,5 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 		return $arrNewInput;		
 		
 	}
-
+*/
 }

@@ -52,7 +52,6 @@
 }
 
 #livepreview_iframe {
-    max-width: none;
     box-shadow: inset 5px 5px 10px #666;
     -moz-box-shadow: inset 5 5px 10px #666;
     -webkit-box-shadow: inset 5 5px 10px #666;
