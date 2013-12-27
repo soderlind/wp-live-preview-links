@@ -1,0 +1,249 @@
+# Copyright (C) 2013 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/admin\n"
+"POT-Creation-Date: 2013-12-27 11:10:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin-page-framework.php:4761
+msgid "The options have been updated."
+msgstr ""
+
+#: admin-page-framework.php:4762
+msgid "The options have been cleared."
+msgstr ""
+
+#: admin-page-framework.php:4763
+msgid "Export Options"
+msgstr ""
+
+#: admin-page-framework.php:4764
+msgid "Import Options"
+msgstr ""
+
+#: admin-page-framework.php:4765
+msgid "Submit"
+msgstr ""
+
+#: admin-page-framework.php:4766
+msgid "An error occurred while uploading the import file."
+msgstr ""
+
+#: admin-page-framework.php:4767
+msgid "The uploaded file type is not supported."
+msgstr ""
+
+#: admin-page-framework.php:4768
+msgid "Could not load the importing data."
+msgstr ""
+
+#: admin-page-framework.php:4769
+msgid "The uploaded file has been imported."
+msgstr ""
+
+#: admin-page-framework.php:4770
+msgid "No data could be imported."
+msgstr ""
+
+#: admin-page-framework.php:4771
+msgid "Add"
+msgstr ""
+
+#: admin-page-framework.php:4772
+msgid "Remove"
+msgstr ""
+
+#: admin-page-framework.php:4773
+msgid "Upload Image"
+msgstr ""
+
+#: admin-page-framework.php:4774
+msgid "Use This Image"
+msgstr ""
+
+#: admin-page-framework.php:4775
+msgid "Are you sure you want to reset the options?"
+msgstr ""
+
+#: admin-page-framework.php:4776
+msgid "Please confirm if you want to perform the specified task."
+msgstr ""
+
+#: admin-page-framework.php:4777
+msgid "The options have been reset."
+msgstr ""
+
+#: admin-page-framework.php:4778
+msgid "The specified options have been deleted."
+msgstr ""
+
+#: admin-page-framework.php:4781
+msgid "Title"
+msgstr ""
+
+#: admin-page-framework.php:4782
+msgid "Author"
+msgstr ""
+
+#: admin-page-framework.php:4783
+msgid "Categories"
+msgstr ""
+
+#: admin-page-framework.php:4784
+msgid "Tags"
+msgstr ""
+
+#: admin-page-framework.php:4785
+msgid "Comments"
+msgstr ""
+
+#: admin-page-framework.php:4786
+msgid "Date"
+msgstr ""
+
+#: admin-page-framework.php:4787
+msgid "Show All"
+msgstr ""
+
+#: admin-page-framework.php:4792
+msgid "Powered by"
+msgstr ""
+
+#: admin-page-framework.php:4795
+msgid "Settings"
+msgstr ""
+
+#: admin-page-framework.php:4798
+msgid "Manage"
+msgstr ""
+
+#: admin-page-framework.php:4801
+msgid "Select Image"
+msgstr ""
+
+#: admin-page-framework.php:4802
+msgid "Upload File"
+msgstr ""
+
+#: admin-page-framework.php:4803
+msgid "Use This File"
+msgstr ""
+
+#: admin-page-framework.php:4804
+msgid "Select File"
+msgstr ""
+
+#: admin-page-framework.php:4807
+msgid "%s queries in %s seconds."
+msgstr ""
+
+#: admin-page-framework.php:4808
+msgid "%s out of %s MB (%s) memory used."
+msgstr ""
+
+#: admin-page-framework.php:4809
+msgid "Peak memory usage %s MB."
+msgstr ""
+
+#: admin-page-framework.php:4810
+msgid "Initial memory usage  %s MB."
+msgstr ""
+
+#: settings.php:12 settings.php:19 settings.php:44
+msgid "Live Preview Links"
+msgstr ""
+
+#: settings.php:27
+msgid "Live Preview Post"
+msgstr ""
+
+#: settings.php:29
+msgid "This contextual help text can be set with the addHelpTab() method."
+msgstr ""
+
+#: settings.php:45
+msgid "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes."
+msgstr ""
+
+#: settings.php:48
+msgid "class=\"wp-live-preview\""
+msgstr ""
+
+#: settings.php:49
+msgid "Internal links only"
+msgstr ""
+
+#: settings.php:50
+msgid "External links only"
+msgstr ""
+
+#: settings.php:51
+msgid "All links"
+msgstr ""
+
+#: settings.php:58
+msgid "Live Preview Dialog"
+msgstr ""
+
+#: settings.php:59
+msgid "The preview dialog size."
+msgstr ""
+
+#: settings.php:62 settings.php:86
+msgid "Width"
+msgstr ""
+
+#: settings.php:63 settings.php:87
+msgid "Height"
+msgstr ""
+
+#: settings.php:82
+msgid "Site Viewport"
+msgstr ""
+
+#: settings.php:83
+msgid "The viewport size of the site you are previewing"
+msgstr ""
+
+#: settings.php:106
+msgid "Scale"
+msgstr ""
+
+#: settings.php:111
+msgid "The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (scale = 0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size."
+msgstr ""
+
+#: settings.php:117
+msgid "Offset"
+msgstr ""
+
+#: settings.php:118
+msgid "The offset from the target in pixels"
+msgstr ""
+
+#: settings.php:129
+msgid "Postition"
+msgstr ""
+
+#: settings.php:130
+msgid "Side to which the preview will open."
+msgstr ""
+
+#: settings.php:133
+msgid "Auto"
+msgstr ""
+
+#: settings.php:134
+msgid "Left"
+msgstr ""
+
+#: settings.php:135
+msgid "wp-live-preview-links"
+msgstr ""

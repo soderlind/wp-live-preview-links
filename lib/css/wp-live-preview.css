@@ -1,0 +1,19 @@
+/**
+ *  wp-live-preview.css, modifies livepreview-demo.css
+ *
+ *  (c) Per Soderlind: http://soderlind.no;
+ */
+
+
+/**
+ * Let's float above the rest
+ */
+#livepreview_dialog {
+	z-index: 9999;
+}
+/**
+ * WordPress sets iframe max-width to 100%, this interfere with wp-live-preview-links 
+ */
+#livepreview_iframe {
+	max-width: none;
+}
