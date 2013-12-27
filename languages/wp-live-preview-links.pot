@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/admin\n"
-"POT-Creation-Date: 2013-12-21 22:47:54+00:00\n"
+"POT-Creation-Date: 2013-12-27 11:10:21+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,218 +12,238 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/admin-page-framework.php:4680
+#: admin-page-framework.php:4761
 msgid "The options have been updated."
 msgstr ""
 
-#: lib/admin-page-framework.php:4681
+#: admin-page-framework.php:4762
 msgid "The options have been cleared."
 msgstr ""
 
-#: lib/admin-page-framework.php:4682
+#: admin-page-framework.php:4763
 msgid "Export Options"
 msgstr ""
 
-#: lib/admin-page-framework.php:4683
+#: admin-page-framework.php:4764
 msgid "Import Options"
 msgstr ""
 
-#: lib/admin-page-framework.php:4684
+#: admin-page-framework.php:4765
 msgid "Submit"
 msgstr ""
 
-#: lib/admin-page-framework.php:4685
+#: admin-page-framework.php:4766
 msgid "An error occurred while uploading the import file."
 msgstr ""
 
-#: lib/admin-page-framework.php:4686
+#: admin-page-framework.php:4767
 msgid "The uploaded file type is not supported."
 msgstr ""
 
-#: lib/admin-page-framework.php:4687
+#: admin-page-framework.php:4768
 msgid "Could not load the importing data."
 msgstr ""
 
-#: lib/admin-page-framework.php:4688
+#: admin-page-framework.php:4769
 msgid "The uploaded file has been imported."
 msgstr ""
 
-#: lib/admin-page-framework.php:4689
+#: admin-page-framework.php:4770
 msgid "No data could be imported."
 msgstr ""
 
-#: lib/admin-page-framework.php:4690
+#: admin-page-framework.php:4771
 msgid "Add"
 msgstr ""
 
-#: lib/admin-page-framework.php:4691
+#: admin-page-framework.php:4772
 msgid "Remove"
 msgstr ""
 
-#: lib/admin-page-framework.php:4692
+#: admin-page-framework.php:4773
 msgid "Upload Image"
 msgstr ""
 
-#: lib/admin-page-framework.php:4693
+#: admin-page-framework.php:4774
 msgid "Use This Image"
 msgstr ""
 
-#: lib/admin-page-framework.php:4694
+#: admin-page-framework.php:4775
 msgid "Are you sure you want to reset the options?"
 msgstr ""
 
-#: lib/admin-page-framework.php:4695
+#: admin-page-framework.php:4776
 msgid "Please confirm if you want to perform the specified task."
 msgstr ""
 
-#: lib/admin-page-framework.php:4696
+#: admin-page-framework.php:4777
 msgid "The options have been reset."
 msgstr ""
 
-#: lib/admin-page-framework.php:4697
+#: admin-page-framework.php:4778
 msgid "The specified options have been deleted."
 msgstr ""
 
-#: lib/admin-page-framework.php:4700
+#: admin-page-framework.php:4781
 msgid "Title"
 msgstr ""
 
-#: lib/admin-page-framework.php:4701
+#: admin-page-framework.php:4782
 msgid "Author"
 msgstr ""
 
-#: lib/admin-page-framework.php:4702
+#: admin-page-framework.php:4783
 msgid "Categories"
 msgstr ""
 
-#: lib/admin-page-framework.php:4703
+#: admin-page-framework.php:4784
 msgid "Tags"
 msgstr ""
 
-#: lib/admin-page-framework.php:4704
+#: admin-page-framework.php:4785
 msgid "Comments"
 msgstr ""
 
-#: lib/admin-page-framework.php:4705
+#: admin-page-framework.php:4786
 msgid "Date"
 msgstr ""
 
-#: lib/admin-page-framework.php:4706
+#: admin-page-framework.php:4787
 msgid "Show All"
 msgstr ""
 
-#: lib/admin-page-framework.php:4711
+#: admin-page-framework.php:4792
 msgid "Powered by"
 msgstr ""
 
-#: lib/admin-page-framework.php:4714
+#: admin-page-framework.php:4795
 msgid "Settings"
 msgstr ""
 
-#: lib/admin-page-framework.php:4717
+#: admin-page-framework.php:4798
 msgid "Manage"
 msgstr ""
 
-#: lib/admin-page-framework.php:4720
+#: admin-page-framework.php:4801
 msgid "Select Image"
 msgstr ""
 
-#: lib/admin-page-framework.php:4721
+#: admin-page-framework.php:4802
 msgid "Upload File"
 msgstr ""
 
-#: lib/admin-page-framework.php:4722
+#: admin-page-framework.php:4803
 msgid "Use This File"
 msgstr ""
 
-#: lib/admin-page-framework.php:4723
+#: admin-page-framework.php:4804
 msgid "Select File"
 msgstr ""
 
-#: settings.php:11 settings.php:26
-msgid "Live Preview Post"
+#: admin-page-framework.php:4807
+msgid "%s queries in %s seconds."
 msgstr ""
 
-#: settings.php:18
-msgid "General Options"
+#: admin-page-framework.php:4808
+msgid "%s out of %s MB (%s) memory used."
 msgstr ""
 
-#: settings.php:28
-msgid "This contextual help text can be set with the addHelpTab() method."
+#: admin-page-framework.php:4809
+msgid "Peak memory usage %s MB."
 msgstr ""
 
-#: settings.php:43
+#: admin-page-framework.php:4810
+msgid "Initial memory usage  %s MB."
+msgstr ""
+
+#: settings.php:12 settings.php:19 settings.php:44
 msgid "Live Preview Links"
 msgstr ""
 
-#: settings.php:47
-msgid "Site internal links only"
+#: settings.php:27
+msgid "Live Preview Post"
+msgstr ""
+
+#: settings.php:29
+msgid "This contextual help text can be set with the addHelpTab() method."
+msgstr ""
+
+#: settings.php:45
+msgid "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes."
 msgstr ""
 
 #: settings.php:48
-msgid "All links"
+msgid "class=\"wp-live-preview\""
 msgstr ""
 
 #: settings.php:49
-msgid "class=\"livepreview\""
+msgid "Internal links only"
 msgstr ""
 
 #: settings.php:50
-msgid "[livepreview] shortcode"
+msgid "External links only"
 msgstr ""
 
-#: settings.php:57
-msgid "Live Preview Dialog"
+#: settings.php:51
+msgid "All links"
 msgstr ""
 
 #: settings.php:58
+msgid "Live Preview Dialog"
+msgstr ""
+
+#: settings.php:59
 msgid "The preview dialog size."
 msgstr ""
 
-#: settings.php:61
-msgid "View Width"
+#: settings.php:62 settings.php:86
+msgid "Width"
 msgstr ""
 
-#: settings.php:62
-msgid "View Height"
-msgstr ""
-
-#: settings.php:77
-msgid "Site Viewport"
-msgstr ""
-
-#: settings.php:78
-msgid "The viewport size of the site you are previewing"
-msgstr ""
-
-#: settings.php:81
-msgid "Target Width"
+#: settings.php:63 settings.php:87
+msgid "Height"
 msgstr ""
 
 #: settings.php:82
-msgid "Target Height"
+msgid "Site Viewport"
 msgstr ""
 
-#: settings.php:97
+#: settings.php:83
+msgid "The viewport size of the site you are previewing"
+msgstr ""
+
+#: settings.php:106
 msgid "Scale"
 msgstr ""
 
-#: settings.php:102
-msgid "The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size."
+#: settings.php:111
+msgid "The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (scale = 0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size."
 msgstr ""
 
-#: settings.php:109
+#: settings.php:117
 msgid "Offset"
 msgstr ""
 
-#: settings.php:110
+#: settings.php:118
 msgid "The offset from the target in pixels"
 msgstr ""
 
-#: settings.php:118
+#: settings.php:129
 msgid "Postition"
 msgstr ""
 
-#: settings.php:119
-msgid "Side to which the preview will open"
+#: settings.php:130
+msgid "Side to which the preview will open."
+msgstr ""
+
+#: settings.php:133
+msgid "Auto"
+msgstr ""
+
+#: settings.php:134
+msgid "Left"
+msgstr ""
+
+#: settings.php:135
+msgid "wp-live-preview-links"
 msgstr ""
