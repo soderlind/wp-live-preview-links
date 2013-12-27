@@ -132,7 +132,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 				'vLabel'             => array( 
 						'auto'  => __('Auto', 'wp-live-preview-links' ), 
 						'left'  => __('Left', 'wp-live-preview-links' ),
-						'right' => __('Right' 'wp-live-preview-links' ) 
+						'right' => __('Right', 'wp-live-preview-links' ),
 				),
 				'vDefault'           => 'auto'
 			)
@@ -143,7 +143,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 	public function do_WP_Live_Preview_Links_Settings() {
         submit_button();
         //update_option( 'WP_Live_Preview_Links_Settings', '' );
-        echo $this->oDebug->getArray( get_option( 'WP_Live_Preview_Links_Settings' ) );       
+        //echo $this->oDebug->getArray( get_option( 'WP_Live_Preview_Links_Settings' ) );       
     }
 
 }
