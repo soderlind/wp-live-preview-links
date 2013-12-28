@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: PerS
 Donate link: http://soderlind.no/donate/
-Tags: preview links
+Tags: preview, links, thumbnails, web images, web site, screenshot
 Requires at least: 3.7
 Tested up to: 3.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ See a live scaled preview of the site you are linking to prior to clicking on it
 
 == Description ==
 
-WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it.
+WP Live Preview Links allows you to [see a live scaled preview](http://soderlind.no/wp-live-preview-links/#demo) of the site you are linking to in a pop-up dialog style window prior to clicking on it.
 
 WP Live Preview Links does not use an external service to create these "thumbnails".
 
@@ -39,6 +39,9 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 2. Admin panel
 
 == Changelog ==
+
+= 1.0.2 =
+* Minor fixes
 
 = 1.0.1 =
 * Fixed a small bug
