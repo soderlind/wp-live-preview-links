@@ -1,11 +1,11 @@
 <?php
 /*
-    Plugin Name: WP Live Preview Links
-    Plugin URI: http://soderlind.no/
-    Description: WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it.
-    Version: 1.0.1
-    Author: Per Soderlind
-    Author URI: http://soderlind.no
+Plugin Name: WP Live Preview Links
+Plugin URI: http://soderlind.no/
+Description: WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it.
+Version: 1.0.1
+Author: Per Soderlind
+Author URI: http://soderlind.no
 */
 
 

@@ -40,6 +40,9 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed a small bug
+
 = 1.0 =
 * Initial release
 
