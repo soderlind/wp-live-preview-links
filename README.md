@@ -16,6 +16,11 @@ You can download and install WP Live Preview Links using the built in WordPress 
 
 Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate" link.
 
+Demo
+-------
+
+You'll find [a demo at my site](http://soderlind.no/wp-live-preview-links/#demo)
+
 Frequently Asked Questions 
 --------------------------
 
