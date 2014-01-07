@@ -30,6 +30,31 @@ Frequently Asked Questions
 1. Certain sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site. If that is the case, this plugin will not work.
 
 
+Adding live preview to WordPress search
+---------------------------------------
+
+This is how I've done it [on my site](http://soderlind.no/?s=plugin) running TwentyTwelve.
+
+In the (child) theme folder, in functions.php, add the following
+
+```php
+add_action( 'wp_enqueue_scripts', 'ps_live_preview_search_result', 11 );
+
+function ps_live_preview_search_result () {
+	wp_enqueue_script( 'ps_live_preview_search_result_script', get_stylesheet_directory_uri() .  '/ps_live_preview_search_result.js', array('wp-live-preview-links'), false, true );
+}
+```
+
+Copy ps_live_preview_search_result.js to the (child) theme folder:
+```javascript
+(function($) {
+	$('.search-results .entry-title a').each(function(index){
+		$(this).addClass('wp-live-preview');
+	});
+	$(window).resize();
+})(jQuery);
+```
+
 
 Changelog
 ---------
