@@ -33,6 +33,8 @@ Frequently Asked Questions
 Adding live preview to WordPress search
 ---------------------------------------
 
+Activate the plugin and in plugin settings select Live Preview Links = class="wp-live-preview"
+
 This is how I've done it [on my site](http://soderlind.no/?s=plugin) running TwentyTwelve.
 
 In the (child) theme folder, in functions.php, add the following
