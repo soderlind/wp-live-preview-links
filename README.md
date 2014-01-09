@@ -60,6 +60,12 @@ Copy ps_live_preview_search_result.js to the (child) theme folder:
 
 Changelog
 ---------
+###1.0.2###
+* Minor fixes
+
+###1.0.1###
+* Fixed a small bug
+
 ###1.0###
 * Initial release
 
