@@ -1,249 +1,449 @@
-# Copyright (C) 2013 
-# This file is distributed under the same license as the  package.
+# Copyright (C) 2014 WP Live Preview Links
+# This file is distributed under the same license as the WP Live Preview Links package.
 msgid ""
 msgstr ""
-"Project-Id-Version:  \n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/admin\n"
-"POT-Creation-Date: 2013-12-27 11:10:21+00:00\n"
+"Project-Id-Version: WP Live Preview Links 1.0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-live-preview-links\n"
+"POT-Creation-Date: 2014-03-10 21:17:12+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: admin-page-framework.php:4761
+#: admin/admin-page-framework.min.php:24
+msgid "queries_in_seconds"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:24
+msgid "out_of_x_memory_used"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:24
+msgid "peak_memory_usage"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:24
+msgid "initial_memory_usage"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "option_cleared"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "option_updated"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "import_error"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "uploaded_file_type_not_supported"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "could_not_load_importing_data"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "not_imported_data"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "imported_data"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "reset_options"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "confirm_perform_task"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "option_been_reset"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "specified_option_been_deleted"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "title"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "author"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:49
+msgid "date"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "show_all"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
 msgid "The options have been updated."
 msgstr ""
 
-#: admin-page-framework.php:4762
+#: admin/admin-page-framework.min.php:59
 msgid "The options have been cleared."
 msgstr ""
 
-#: admin-page-framework.php:4763
+#: admin/admin-page-framework.min.php:59
+msgid "Export"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
 msgid "Export Options"
 msgstr ""
 
-#: admin-page-framework.php:4764
+#: admin/admin-page-framework.min.php:59
+msgid "Import"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
 msgid "Import Options"
 msgstr ""
 
-#: admin-page-framework.php:4765
+#: admin/admin-page-framework.min.php:59
 msgid "Submit"
 msgstr ""
 
-#: admin-page-framework.php:4766
+#: admin/admin-page-framework.min.php:59
 msgid "An error occurred while uploading the import file."
 msgstr ""
 
-#: admin-page-framework.php:4767
-msgid "The uploaded file type is not supported."
+#: admin/admin-page-framework.min.php:59
+msgid "The uploaded file type is not supported: %1$s"
 msgstr ""
 
-#: admin-page-framework.php:4768
+#: admin/admin-page-framework.min.php:59
 msgid "Could not load the importing data."
 msgstr ""
 
-#: admin-page-framework.php:4769
+#: admin/admin-page-framework.min.php:59
 msgid "The uploaded file has been imported."
 msgstr ""
 
-#: admin-page-framework.php:4770
+#: admin/admin-page-framework.min.php:59
 msgid "No data could be imported."
 msgstr ""
 
-#: admin-page-framework.php:4771
-msgid "Add"
-msgstr ""
-
-#: admin-page-framework.php:4772
-msgid "Remove"
-msgstr ""
-
-#: admin-page-framework.php:4773
+#: admin/admin-page-framework.min.php:59
 msgid "Upload Image"
 msgstr ""
 
-#: admin-page-framework.php:4774
+#: admin/admin-page-framework.min.php:59
 msgid "Use This Image"
 msgstr ""
 
-#: admin-page-framework.php:4775
+#: admin/admin-page-framework.min.php:59
 msgid "Are you sure you want to reset the options?"
 msgstr ""
 
-#: admin-page-framework.php:4776
+#: admin/admin-page-framework.min.php:59
 msgid "Please confirm if you want to perform the specified task."
 msgstr ""
 
-#: admin-page-framework.php:4777
+#: admin/admin-page-framework.min.php:59
 msgid "The options have been reset."
 msgstr ""
 
-#: admin-page-framework.php:4778
+#: admin/admin-page-framework.min.php:59
 msgid "The specified options have been deleted."
 msgstr ""
 
-#: admin-page-framework.php:4781
+#: admin/admin-page-framework.min.php:59
 msgid "Title"
 msgstr ""
 
-#: admin-page-framework.php:4782
+#: admin/admin-page-framework.min.php:59
 msgid "Author"
 msgstr ""
 
-#: admin-page-framework.php:4783
+#: admin/admin-page-framework.min.php:59
 msgid "Categories"
 msgstr ""
 
-#: admin-page-framework.php:4784
+#: admin/admin-page-framework.min.php:59
 msgid "Tags"
 msgstr ""
 
-#: admin-page-framework.php:4785
+#: admin/admin-page-framework.min.php:59
 msgid "Comments"
 msgstr ""
 
-#: admin-page-framework.php:4786
+#: admin/admin-page-framework.min.php:59
 msgid "Date"
 msgstr ""
 
-#: admin-page-framework.php:4787
+#: admin/admin-page-framework.min.php:59
 msgid "Show All"
 msgstr ""
 
-#: admin-page-framework.php:4792
+#: admin/admin-page-framework.min.php:59
 msgid "Powered by"
 msgstr ""
 
-#: admin-page-framework.php:4795
+#: admin/admin-page-framework.min.php:59
 msgid "Settings"
 msgstr ""
 
-#: admin-page-framework.php:4798
+#: admin/admin-page-framework.min.php:59
 msgid "Manage"
 msgstr ""
 
-#: admin-page-framework.php:4801
+#: admin/admin-page-framework.min.php:59
 msgid "Select Image"
 msgstr ""
 
-#: admin-page-framework.php:4802
+#: admin/admin-page-framework.min.php:59
 msgid "Upload File"
 msgstr ""
 
-#: admin-page-framework.php:4803
+#: admin/admin-page-framework.min.php:59
 msgid "Use This File"
 msgstr ""
 
-#: admin-page-framework.php:4804
+#: admin/admin-page-framework.min.php:59
 msgid "Select File"
 msgstr ""
 
-#: admin-page-framework.php:4807
+#: admin/admin-page-framework.min.php:59
 msgid "%s queries in %s seconds."
 msgstr ""
 
-#: admin-page-framework.php:4808
+#: admin/admin-page-framework.min.php:59
 msgid "%s out of %s MB (%s) memory used."
 msgstr ""
 
-#: admin-page-framework.php:4809
+#: admin/admin-page-framework.min.php:59
 msgid "Peak memory usage %s MB."
 msgstr ""
 
-#: admin-page-framework.php:4810
+#: admin/admin-page-framework.min.php:59
 msgid "Initial memory usage  %s MB."
 msgstr ""
 
-#: settings.php:12 settings.php:19 settings.php:44
+#: admin/admin-page-framework.min.php:59
+msgid "The allowed maximum number of fields is {0}."
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "The allowed minimum number of fields is {0}."
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "Add"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "Remove"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "The allowed maximum number of sections is (0)"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "The allowed minimum number of sections is (0)"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "Add Section"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:59
+msgid "Remove Section"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1023
+#: admin/admin-page-framework.min.php:1345
+msgid "use_this_image"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1219
+msgid "add"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1219
+msgid "remove"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1235
+msgid "allowed_maximum_number_of_fields"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1235
+msgid "allowed_minimum_number_of_fields"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1235
+msgid "allowed_maximum_number_of_sections"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1235
+msgid "allowed_minimum_number_of_sections"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1240
+msgid "add_section"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1240
+msgid "remove_section"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1245
+msgid "powered_by"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1345
+msgid "upload_image"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1686
+msgid "select_image"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1766
+msgid "submit"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1766
+msgid "export"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1773
+msgid "import"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1942
+msgid "settings"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1942
+msgid "manage"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1949
+msgid "upload_file"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:1949
+msgid "use_this_file"
+msgstr ""
+
+#: admin/admin-page-framework.min.php:2171
+msgid "select_file"
+msgstr ""
+
+#: admin/settings.php:13 admin/settings.php:22 admin/settings.php:39
 msgid "Live Preview Links"
 msgstr ""
 
-#: settings.php:27
-msgid "Live Preview Post"
-msgstr ""
-
-#: settings.php:29
-msgid "This contextual help text can be set with the addHelpTab() method."
-msgstr ""
-
-#: settings.php:45
+#: admin/settings.php:40
 msgid "Which links will trigger the live preview. Certain external sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site for obvious reasons. If that is the case, this plugin will not work, and it's best to respect the site owner's wishes."
 msgstr ""
 
-#: settings.php:48
+#: admin/settings.php:43
 msgid "class=\"wp-live-preview\""
 msgstr ""
 
-#: settings.php:49
+#: admin/settings.php:44
 msgid "Internal links only"
 msgstr ""
 
-#: settings.php:50
+#: admin/settings.php:45
 msgid "External links only"
 msgstr ""
 
-#: settings.php:51
+#: admin/settings.php:46
 msgid "All links"
 msgstr ""
 
-#: settings.php:58
+#: admin/settings.php:53
 msgid "Live Preview Dialog"
 msgstr ""
 
-#: settings.php:59
+#: admin/settings.php:54
 msgid "The preview dialog size."
 msgstr ""
 
-#: settings.php:62 settings.php:86
+#: admin/settings.php:57 admin/settings.php:80
 msgid "Width"
 msgstr ""
 
-#: settings.php:63 settings.php:87
+#: admin/settings.php:62 admin/settings.php:85
 msgid "Height"
 msgstr ""
 
-#: settings.php:82
+#: admin/settings.php:76
 msgid "Site Viewport"
 msgstr ""
 
-#: settings.php:83
+#: admin/settings.php:77
 msgid "The viewport size of the site you are previewing"
 msgstr ""
 
-#: settings.php:106
+#: admin/settings.php:99
 msgid "Scale"
 msgstr ""
 
-#: settings.php:111
+#: admin/settings.php:109
 msgid "The scaling of the viewport size of the site you are previewing (this is the CSS transform scale property), default = calculated automatically. Notes: If no scaling is specified (scale = 0), then the scaling is automatically calculated to provide the best fit to the preview dialog window size."
 msgstr ""
 
-#: settings.php:117
+#: admin/settings.php:115
 msgid "Offset"
 msgstr ""
 
-#: settings.php:118
+#: admin/settings.php:116
 msgid "The offset from the target in pixels"
 msgstr ""
 
-#: settings.php:129
+#: admin/settings.php:134
 msgid "Postition"
 msgstr ""
 
-#: settings.php:130
+#: admin/settings.php:135
 msgid "Side to which the preview will open."
 msgstr ""
 
-#: settings.php:133
+#: admin/settings.php:138
 msgid "Auto"
 msgstr ""
 
-#: settings.php:134
+#: admin/settings.php:139
 msgid "Left"
 msgstr ""
 
-#: settings.php:135
-msgid "wp-live-preview-links"
+#: admin/settings.php:140
+msgid "Right"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "WP Live Preview Links"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://soderlind.no/wp-live-preview-links/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Per Soderlind"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://soderlind.no"
 msgstr ""
