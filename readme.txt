@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: PerS
 Donate link: http://soderlind.no/donate/
-Tags: preview links
+Tags: preview, links, thumbnails, web images, web site, screenshot
 Requires at least: 3.7
 Tested up to: 3.8
-Stable tag: 1.0.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ See a live scaled preview of the site you are linking to prior to clicking on it
 
 == Description ==
 
-WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it.
+WP Live Preview Links allows you to [see a live scaled preview](http://soderlind.no/wp-live-preview-links/#demo) of the site you are linking to in a pop-up dialog style window prior to clicking on it.
 
 WP Live Preview Links does not use an external service to create these "thumbnails".
 
@@ -40,10 +40,50 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 
 == Changelog ==
 
+= 1.0.4 =
+
+* Added mising file
+
+= 1.0.3 =
+
+* Upgraded [Admin Page Framework](http://wordpress.org/plugins/admin-page-framework/) to version 3
+
+= 1.0.2 =
+* Minor fixes
+
+= 1.0.1 =
+* Fixed a small bug
+
 = 1.0 =
 * Initial release
 
 == Other Notes ==
+
+= Adding live preview to WordPress search =
+
+Activate the plugin and in plugin settings select Live Preview Links = class="wp-live-preview"
+
+This is how I've done it [on my site](http://soderlind.no/?s=plugin) running TwentyTwelve.
+
+In the (child) theme folder, in functions.php, add the following
+
+`
+add_action( 'wp_enqueue_scripts', 'ps_live_preview_search_result', 11 );
+
+function ps_live_preview_search_result () {
+	wp_enqueue_script( 'ps_live_preview_search_result_script', get_stylesheet_directory_uri() .  '/ps_live_preview_search_result.js', array('wp-live-preview-links'), false, true );
+}
+`
+
+Copy ps_live_preview_search_result.js to the (child) theme folder:
+`
+(function($) {
+	$('.search-results .entry-title a').each(function(index){
+		$(this).addClass('wp-live-preview');
+	});
+	$(window).resize();
+})(jQuery);
+`
 
 = Credits =
 
