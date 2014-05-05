@@ -14,7 +14,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
 			version_compare( $GLOBALS['wp_version'], '3.8', '>=' ) ? 'dashicons-welcome-view-site' : null
 		);
 
-		$this->showPageHeadingTabs( false );
+		$this->setPageHeadingTabsVisibility( false );
 		$this->setCapability( 'manage_options' );
 
 		$this->addSubMenuPage(

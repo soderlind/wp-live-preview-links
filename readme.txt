@@ -3,8 +3,8 @@ Contributors: PerS
 Donate link: http://soderlind.no/donate/
 Tags: preview, links, thumbnails, web images, web site, screenshot
 Requires at least: 3.7
-Tested up to: 3.8
-Stable tag: 1.0.4.1
+Tested up to: 3.9
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,11 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 2. Admin panel
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Upgraded [Admin Page Framework](http://wordpress.org/plugins/admin-page-framework/) to version 3.0.5
+* Updated languages/wp-live-preview-links.po
 
 = 1.0.4 =
 
