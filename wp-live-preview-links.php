@@ -3,7 +3,7 @@
 Plugin Name: WP Live Preview Links
 Plugin URI: http://soderlind.no/wp-live-preview-links/
 Description: WP Live Preview Links allows you to see a live scaled preview of the site you are linking to in a pop-up dialog style window prior to clicking on it.
-Version: 1.0.5
+Version: 1.0.6
 Author: Per Soderlind
 Author URI: http://soderlind.no
 Text Domain: wp-live-preview-links
@@ -45,6 +45,7 @@ function wp_live_preview_links_scripts() {
 
 	wp_localize_script( 'wp-live-preview-links', 'wp_live_preview_links_vars', array(
 			'link'           => ( isset( $arr_options['options']['link'] ) ) ? $arr_options['options']['link'] : 'class',
+			'custom'         => ( isset( $arr_options['options']['custom'] ) ) ? $arr_options['options']['custom'] : '',
 			'viewWidth'      => ( isset( $arr_options['options']['dialog'][0]['size'] ) ) ? $arr_options['options']['dialog'][0]['size'] : '300',
 			'viewHeight'     => ( isset( $arr_options['options']['dialog'][1]['size'] ) ) ? $arr_options['options']['dialog'][1]['size'] : '200',
 			'targetWidth'    => ( isset( $arr_options['options']['target'][0]['size'] ) ) ? $arr_options['options']['target'][0]['size'] : '1000',

@@ -40,6 +40,9 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 
 == Changelog ==
 
+= 1.0.6 =
+* Added the option to use a [jQuery Selector](http://www.w3schools.com/jquery/jquery_ref_selectors.asp) to tell Live Preview Links which links to use.
+* 
 = 1.0.5 =
 
 * Upgraded [Admin Page Framework](http://wordpress.org/plugins/admin-page-framework/) to version 3.0.5
