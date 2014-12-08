@@ -60,6 +60,9 @@ Copy ps_live_preview_search_result.js to the (child) theme folder:
 
 Changelog
 ---------
+### 1.0.6.1 ###
+* Fixed bad path to admin/RevealerCustomFieldType.php
+
 ### 1.0.6 ###
 * Added the option to use a [jQuery Selector](http://www.w3schools.com/jquery/jquery_ref_selectors.asp) to tell Live Preview Links which links to use.
 

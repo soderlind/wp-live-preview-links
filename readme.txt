@@ -4,7 +4,7 @@ Donate link: http://soderlind.no/donate/
 Tags: preview, links, thumbnails, web images, web site, screenshot
 Requires at least: 3.9
 Tested up to: 4.0.1
-Stable tag: 1.0.6
+Stable tag: 1.0.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,8 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 
 == Changelog ==
 
+= 1.0.6.1=
+* Fixed bad path to admin/RevealerCustomFieldType.php
 = 1.0.6 =
 * Added the option to use a [jQuery Selector](http://www.w3schools.com/jquery/jquery_ref_selectors.asp) to tell Live Preview Links which links to use.
 = 1.0.5 =

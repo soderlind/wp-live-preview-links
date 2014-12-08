@@ -12,7 +12,7 @@ class WP_Live_Preview_Links_Settings extends AdminPageFramework {
     public function start_WP_Live_Preview_Links_Settings() {  // start_{extended class name} - this method gets automatically triggered at the end of the class constructor.
 
       if (! class_exists('RevealerCustomFieldType'))
-           include_once(dirname( __FILE__ ) . '/library/RevealerCustomFieldType.php');
+           include_once(dirname( __FILE__ ) . '/RevealerCustomFieldType.php');
       $sClassName = get_class( $this );
 
       new RevealerCustomFieldType( $sClassName );
