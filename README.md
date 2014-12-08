@@ -69,6 +69,7 @@ Changelog
 
 ### 1.0.4 ###
 * Added mising file
+
 ###1.0.2###
 * Minor fixes
 
