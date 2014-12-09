@@ -33,6 +33,12 @@ Activate WP Live Preview Links in the "Plugins" admin panel using the "Activate"
 1. WP Live Preview Links needs a modern browsers that support CSS3 3D Transform properties (Chrome, Firefox, Safari, IE10+)
 1. Certain sites may have set their X-FRAME-OPTIONS header policy to SAMEORGIN or DENY. This is specifically to prevent other sites from iframing their site. If that is the case, this plugin will not work.
 
+= Show me some cool jQuery Selectors =
+
+1. All links with class="myclass":  `.myclass`
+1. All links in the widget area: `.widget a`
+1. All external links except wordpress.org and wordpress.com: `a:not([href^="http://wordpress.org"]):not([href^="http://wordpress.com"]):not([href^="#"]):not([href^="/"])`
+
 == Screenshots ==
 
 1. Live preview
